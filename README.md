@@ -1,24 +1,52 @@
-# Hotel Booking API
+# Hotel Booking Backend API
 
-A backend API for managing hotel room listings, searching available rooms, and booking reservations.
+A backend REST API for a Hotel Booking Platform built using Node.js, Express.js, PostgreSQL, and JWT Authentication.
 
-## Prerequisites
+---
 
-- Node.js 18+
+# Features
 
-## Setup
+- User Registration & Login
+- JWT Authentication
+- Create Hotel Room Listings
+- Edit/Delete Own Room Listings
+- Search & Filter Rooms
+- Room Booking System
+- Check Room Availability
+- Prevent Double Booking
+- Input Validation
+- Error Handling
+- PostgreSQL Database Integration
 
-1. Copy the environment file:
-   `cp .env.example .env`
-2. Install dependencies:
-   `npm install`
-3. Initialize the local SQLite database:
-   `npm run init:db`
-4. Start the API:
-   `npm start`
+---
 
-## API Overview
+# Tech Stack
 
-- Authentication: `/api/auth/register`, `/api/auth/login`
-- Rooms: `/api/rooms`
-- Bookings: `/api/bookings`
+| Technology | Usage |
+|---|---|
+| Node.js | Backend Runtime |
+| Express.js | REST API Framework |
+| PostgreSQL | Relational Database |
+| JWT | Authentication |
+| bcryptjs | Password Hashing |
+| express-validator | Input Validation |
+
+---
+
+# Project Structure
+
+```bash
+hotel-booking-api/
+│
+├── src/
+│   ├── config/
+│   ├── middleware/
+│   ├── routes/
+│   ├── controllers/
+│   ├── utils/
+│   ├── app.js
+│   └── server.js
+│
+├── package.json
+├── .env
+└── README.md
